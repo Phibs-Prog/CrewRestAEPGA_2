@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Crew Rest Acordo Empresa</string>
+    <string name="baseOut">Home Base</string>
+    <string name="textRefTime">Reference Time</string>
+    <string name="baseIn">Home Base</string>
+    <string name="extraCrew">DHC</string>
+    <string name="descanso">Minimum Rest</string>
+    <string name="calcosVal">HH:MM</string>
+    <string name="calcDutyMax">Maximum Duty</string>
+    <string name="textCalcosOut">Scheduled Off-Blocks</string>
+    <string name="textCalcosIn">On-Blocks or Check-Out</string>
+    <string name="textDutyVal">Flight Duty Period</string>
+    <string name="dutyVal">HH:MM</string>
+    <string name="textCalcosVal">Next Off-Blocks</string>
+    <string name="textExtraCrew">Dead Head On-Blocks</string>
+    <string name="extraCrewBase">Home Base</string>
+    <string name="textDutyMaxVal">Maximum Duty</string>
+    <string name="dutyMaxVal">HH:MM</string>
+    <string name="textDutyMaxBlock">Max Duty Blocks</string>
+    <string name="dutyMaxBlock">HH:MM</string>
+    <string name="textCalcosOutTimePicker">HH:MM</string>
+    <string name="textCalcosInTimePicker">HH:MM</string>
+    <string name="textCalcosDHCTimePicker">HH:MM</string>
+    <string name="nocturno">Nocturno</string>
+    <string name="circadiano">WOCL</string>
+    <string name="IO">Irregularidade Operacional</string>
+<!--    <string name="quintoDia">Quinto Dia</string>-->
+    <string name="extension">Sched. Duty Ext. Not Allowed</string>
+    <string name="textAE">Acordo de Empresa</string>
+    <string name="textFTL">EU.OPS-FTL</string>
+    <string name="textCalcosInSplit">On-Block Split</string>
+    <string name="textCalcosOutSplit">Off-Block Split</string>
+    <string name="limiteSplit">SPLIT DUTY</string>
+    <string name="textDutyMaxBlockSplit">Max Duty Blocks</string>
+    <string name="dutyMaxBlockSplit">HH:MM</string>
+    <string name="textDutyMaxSplit">Maximum Duty</string>
+    <string name="dutyMaxSplit">HH:MM</string>
+    <string name="textTempoTransp">Travelling Time</string>
+    <string name="textTempoTransporte">Travelling Time</string>
+
+    <string-array name="numbOfSectors">
+        <item>1-2 Sectors</item>
+        <item>3 Sectors</item>
+        <item>4 Sectors</item>
+        <item>5 Sectors</item>
+    </string-array>
+
+    <string-array name="tempTranspSplit">
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+    </string-array>
+
+    <string-array name="tempTransp">
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#68add4</color>
+    <color name="colorPrimaryDark">#318fb1</color>
+    <color name="colorAccent">#68add4</color>
+    <color name="colorBackground">#d9e1e4</color>
+    <color name="background_material_light">#f1f1f2</color>
+    <color name="bottom_rd_layout">#C3C3D3</color>
+    <color name="colorBackgroundMain">#3F3F40</color>
+</resources>

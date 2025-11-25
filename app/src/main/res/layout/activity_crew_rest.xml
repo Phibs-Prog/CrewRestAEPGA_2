@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f9f9"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:weightSum="4"
+    tools:context="com.phibs.crewrestsipla.CrewRest">
+
+
+    <RelativeLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_round_corner_stroke"
+        android:elevation="10dp"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/textCalcosOut"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/textCalcosOut"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/calcosOut"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:text="@string/textCalcosOutTimePicker"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textRefTimeCo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="75dp"
+            android:text="@string/textRefTime"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/textview_border_rd"
+            android:padding="3dp"
+            android:elevation="10dp"
+            android:textSize="10dp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/textCalcosIn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/textCalcosIn"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/calcosIn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:text="@string/textCalcosInTimePicker"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textExtraCrew"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:text="@string/textExtraCrew"
+            android:textSize="12dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/extraCrew"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:text="@string/textCalcosDHCTimePicker"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+
+        <Switch
+            android:id="@+id/switchBaseIn"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:minHeight="42dp"
+            android:text="@string/baseIn"
+            android:textSize="12dp" />
+
+        <Switch
+            android:id="@+id/switchDhcBase"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="30dp"
+            android:minHeight="42dp"
+            android:text="@string/extraCrewBase"
+            android:textSize="12dp"
+            android:visibility="invisible" />
+
+        <Switch
+            android:id="@+id/switchExtraCrew"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="30dp"
+            android:minHeight="42dp"
+            android:text="@string/extraCrew"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/textTempoTrandp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="25dp"
+            android:gravity="center"
+            android:text="@string/textTempoTransporte"
+            android:textSize="14dp" />
+
+        <Spinner
+            android:id="@+id/transp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="25dp" />
+
+    </RelativeLayout>
+
+<!--    <Space-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="5dp"/>-->
+
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/layout_round_corner"
+        android:elevation="10dp">
+
+        <Button
+            android:id="@+id/calcDescanso"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:elevation="10dp"
+            android:maxLines="2"
+            android:text="@string/descanso"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/imageViewHelpMinimumRest"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="36dp"
+            android:layout_toEndOf="@+id/calcDescanso"
+            android:src="@drawable/ic_help_black_24dp" />
+
+        <TextView
+            android:id="@+id/textDutyVal"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/textDutyVal"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/dutyVal"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/dutyVal"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+
+        <TextView
+            android:id="@+id/textCalcosVal"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:text="@string/textCalcosVal"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/calcosVal"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:text="@string/calcosVal"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textRefTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="end"
+            android:text="@string/textRefTime"
+            android:textColor="#556F8C"
+            android:textSize="10dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textNocturno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/nocturno"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp"
+            android:background="@drawable/textview_border_rd"
+            android:padding="3dp"
+            android:elevation="10dp"
+            android:textStyle="italic"/>
+
+        <ImageView
+            android:id="@+id/imageNocturno"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="80dp"
+            android:layout_toEndOf="@+id/textNocturno"
+            android:background="@android:drawable/checkbox_off_background" />
+
+        <TextView
+            android:id="@+id/textCircadiano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="110dp"
+            android:text="@string/circadiano"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp"
+            android:background="@drawable/textview_border_rd"
+            android:padding="3dp"
+            android:elevation="10dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textIO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/textview_border_rd"
+            android:padding="3dp"
+            android:elevation="10dp"
+            android:text="@string/IO"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp"
+            android:textStyle="italic" />
+
+        <!--<Switch
+            android:id="@+id/switchQuintoDia"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="120dp"
+            android:minHeight="42dp"
+            android:text="@string/quintoDia"
+            android:textSize="12dp" />-->
+
+        <!-- <ImageView
+            android:id="@+id/imageViewHelpQuintoDia"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/ic_help_black_24dp" />-->
+
+        <ImageView
+            android:id="@+id/imageCircadiano"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="110dp"
+            android:layout_toEndOf="@+id/textNocturno"
+            android:background="@android:drawable/checkbox_off_background" />
+
+        <TextView
+            android:id="@+id/textDutyWOCL"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textSize="15dp"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:background="@drawable/layout_round_corner">
+
+            <Button
+            android:id="@+id/calcDutyMax"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:elevation="10dp"
+            android:maxLines="2"
+            android:text="@string/calcDutyMax"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <Spinner
+            android:id="@+id/sectors"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/calcDutyMax"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp" />
+
+
+        <TextView
+            android:id="@+id/textDutyMaxVal"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/textDutyMaxVal"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textDutyMaxBlock"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/textDutyMaxBlock"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/dutyMaxVal"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="@string/dutyMaxVal"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/dutyMaxValAE"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:text="@string/dutyMaxVal"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/dutyMaxBlock"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="@string/dutyMaxBlock"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+
+        <TextView
+            android:id="@+id/dutyMaxBlockAE"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:text="@string/dutyMaxBlock"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textDutyFTL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="85dp"
+            android:gravity="start"
+            android:text="@string/textFTL"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp"
+            android:background="@drawable/textview_border_rd"
+            android:padding="3dp"
+            android:elevation="10dp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/textRefTimeNextOfBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="115dp"
+            android:gravity="start"
+            android:text="@string/textAE"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp"
+            android:background="@drawable/textview_border_rd"
+            android:padding="3dp"
+            android:elevation="10dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textMaxDutyAE"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textSize="15dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:elevation="10dp"
+        android:background="@drawable/layout_round_corner">
+
+        <Button
+            android:id="@+id/calcDescansoSplit"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:elevation="10dp"
+            android:maxLines="2"
+            android:text="@string/limiteSplit"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textCalcosInSplit"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/textCalcosInSplit"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/calcosInSplit"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/textCalcosOutTimePicker"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textCalcosOutSplit"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/textCalcosOutSplit"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/calcosOutSplit"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/textCalcosDHCTimePicker"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+
+        <ImageView
+            android:id="@+id/imageViewHelpSplit"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_toEndOf="@id/calcDescansoSplit"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="36dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_help_black_24dp" />
+
+        <TextView
+            android:id="@+id/textDutyMaxBlockSplit"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="95dp"
+            android:gravity="center"
+            android:text="@string/textDutyMaxBlockSplit"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/dutyMaxBlockSplit"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="135dp"
+            android:gravity="center"
+            android:text="@string/dutyMaxBlockSplit"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+        <!--        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"-->
+
+        <TextView
+            android:id="@+id/textDutyMaxSplit"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp"
+            android:gravity="center"
+            android:text="@string/textDutyMaxSplit"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/dutyMaxSplit"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="135dp"
+            android:gravity="center"
+            android:text="@string/dutyMaxSplit"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textTempoTranspSplit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="90dp"
+            android:text="@string/textTempoTransp"
+            android:textSize="14dp" />
+
+        <Spinner
+            android:id="@+id/transpSplit"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="115dp" />
+
+        <TextView
+            android:id="@+id/splitDutyMaxTextAE"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textSize="15dp"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
